@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Jaalakam Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+        font-family: Arial, sans-serif;
+        }
+        .leaderboard-container {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        .leaderboard-title {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        }
+
+        .leaderboard-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem;
+        }
+
+        .leaderboard-card {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .leaderboard-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .rank {
+        padding: 0.75rem;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        background: #f5f6fa;
+        color: #2c3e50;
+        }
+
+        .rank-1 {
+        background: linear-gradient(135deg, #ffd700, #ffa500);
+        color: #ffffff;
+        }
+
+        .rank-2 {
+        background: linear-gradient(135deg, #c0c0c0, #a9a9a9);
+        color: #ffffff;
+        }
+
+        .rank-3 {
+        background: linear-gradient(135deg, #cd7f32, #8b4513);
+        color: #ffffff;
+        }
+
+        .user-info {
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        }
+
+        .user-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-details {
+        flex: 1;
+        }
+
+        .username {
+        margin: 0;
+        color: #2c3e50;
+        font-size: 1.25rem;
+        font-weight: 600;
+        }
+
+        .name {
+        margin: 0.25rem 0;
+        color: #7f8c8d;
+        font-size: 0.9rem;
+        }
+
+        .points {
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: baseline;
+        gap: 0.25rem;
+        }
+
+        .points-value {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #27ae60;
+        }
+
+        .points-label {
+        color: #95a5a6;
+        font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+        .leaderboard-grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+        
+        .leaderboard-title {
+            font-size: 2rem;
+        }
+        .username{
+            font-size: 1.1rem;
+        }
+        .user-avatar {
+            width: 60px;
+            height: 60px;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="leaderboard-container">
+        <h1 class="leaderboard-title">CJ Leaderboard</h1>
+         <div class="leaderboard-grid">
+
+            <div class="leaderboard-card">
+                <div class="rank rank-1">
+                    #1
+                </div>
+                <div class="user-info">
+                    <img src="photos/alt.avif" alt="Nasar + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">Nasarpaloor123</h3>
+                        <p class="name">Nasar</p>
+                        <div class="points">
+                            <span class="points-value">773</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank rank-2">
+                    #2
+                </div>
+                <div class="user-info">
+                    <img src="photos/alt.avif" alt="Rohith SR + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">Float32ty</h3>
+                        <p class="name">Rohith SR</p>
+                        <div class="points">
+                            <span class="points-value">564</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank rank-3">
+                    #3
+                </div>
+                <div class="user-info">
+                    <img src="photos/ThomasPala.enc" alt="Thomas MJ + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">ThomasPala</h3>
+                        <p class="name">Thomas MJ</p>
+                        <div class="points">
+                            <span class="points-value">544</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank ">
+                    #4
+                </div>
+                <div class="user-info">
+                    <img src="photos/MasterSRV.enc" alt="Sourav UP + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">MasterSRV</h3>
+                        <p class="name">Sourav UP</p>
+                        <div class="points">
+                            <span class="points-value">471</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank ">
+                    #5
+                </div>
+                <div class="user-info">
+                    <img src="photos/Ismailk.enc" alt="Ismail KP + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">ISMAILKCHESS</h3>
+                        <p class="name">Ismail KP</p>
+                        <div class="points">
+                            <span class="points-value">440</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank ">
+                    #6
+                </div>
+                <div class="user-info">
+                    <img src="photos/alt.avif" alt="Akash S + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">akash1123</h3>
+                        <p class="name">Akash S</p>
+                        <div class="points">
+                            <span class="points-value">432</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank ">
+                    #7
+                </div>
+                <div class="user-info">
+                    <img src="photos/abyjith.jpg" alt="Abhijith U + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">Abyjith</h3>
+                        <p class="name">Abhijith U</p>
+                        <div class="points">
+                            <span class="points-value">354</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank ">
+                    #8
+                </div>
+                <div class="user-info">
+                    <img src="photos/Ruffz.jpg" alt="Mithun + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">Ruffzz</h3>
+                        <p class="name">Mithun</p>
+                        <div class="points">
+                            <span class="points-value">268</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank ">
+                    #9
+                </div>
+                <div class="user-info">
+                    <img src="photos/alt.avif" alt="Adarsh S + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">ADARSH1123</h3>
+                        <p class="name">Adarsh S</p>
+                        <div class="points">
+                            <span class="points-value">265</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="leaderboard-card">
+                <div class="rank ">
+                    #10
+                </div>
+                <div class="user-info">
+                    <img src="photos/alt.avif" alt="Muhammed Ashif + ' avatar'" class="user-avatar">
+                    <div class="user-details">
+                        <h3 class="username">SHERSON123</h3>
+                        <p class="name">Muhammed Ashif</p>
+                        <div class="points">
+                            <span class="points-value">241</span>
+                            <span class="points-label">points</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</body>
+</html>
